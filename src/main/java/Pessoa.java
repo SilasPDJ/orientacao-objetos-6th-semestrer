@@ -1,13 +1,32 @@
 public class Pessoa {
     private String sexo;
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
     private double altura;
     private double peso;
 
     public void setSexo(String sexo) {
-        this.sexo = sexo;
+        if (!(sexo.equals("F") || sexo.equals("M"))){
+            throw new IllegalArgumentException("Sexo invalido");
+        }
+            this.sexo = sexo;
     }
 
     public void setAltura(double altura) {
+        if(altura < 0){
+            throw new IllegalArgumentException("Altura inválida, deve ser maior do que 0");
+        }
         this.altura = altura;
     }
 
