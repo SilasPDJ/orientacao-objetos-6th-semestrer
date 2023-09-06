@@ -7,20 +7,21 @@ class PessoaTest {
     Pessoa pessoa;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         pessoa = new Pessoa();
     }
 
-    void testarMulher(double altura, double peso, String resultadoEsperado){
+    void testarMulher(double altura, double peso, String resultadoEsperado) {
         pessoa.setAltura(altura);
         pessoa.setPeso(peso);
-        pessoa.setSexo("feminino");
+        pessoa.setSexo("F");
         assertEquals(resultadoEsperado, pessoa.calcularImc());
     }
-    void testarHomem(double altura, double peso, String resultadoEsperado){
+
+    void testarHomem(double altura, double peso, String resultadoEsperado) {
         pessoa.setAltura(altura);
         pessoa.setPeso(peso);
-        pessoa.setSexo("masculino");
+        pessoa.setSexo("M");
         assertEquals(resultadoEsperado, pessoa.calcularImc());
 
     }
@@ -40,7 +41,7 @@ class PessoaTest {
     void deveRetornarMulherMarginalmenteAcimaDoPeso() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(25.8);
-        pessoa.setSexo("feminino");
+        pessoa.setSexo("F");
         assertEquals("marginalmente acima do peso", pessoa.calcularImc());
     }
 
@@ -48,7 +49,7 @@ class PessoaTest {
     void deveRetornarMulherAcimaDoPeso() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(27.3);
-        pessoa.setSexo("feminino");
+        pessoa.setSexo("F");
         assertEquals("acima do peso ideal", pessoa.calcularImc());
     }
 
@@ -56,7 +57,7 @@ class PessoaTest {
     void deveRetornarMulherAcimaDoPesoIdeal() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(32.3);
-        pessoa.setSexo("feminino");
+        pessoa.setSexo("F");
         assertEquals("obeso", pessoa.calcularImc());
     }
 
@@ -64,28 +65,31 @@ class PessoaTest {
     void deveRetornarMulherObeso() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(33.5);
-        pessoa.setSexo("feminino");
+        pessoa.setSexo("F");
         assertEquals("obeso", pessoa.calcularImc());
     }
+
     @Test
     void deveRetornarHomemAbaixoDoPeso() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(20.09);
-        pessoa.setSexo("masculino");
+        pessoa.setSexo("M");
         assertEquals("abaixo do peso", pessoa.calcularImc());
     }
+
     @Test
     void deveRetornarHomemNoPesoNormal() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(25.79);
-        pessoa.setSexo("masculino");
+        pessoa.setSexo("M");
         assertEquals("no peso normal", pessoa.calcularImc());
     }
+
     @Test
     void deveRetornarHomemMarginalmenteAcimaDoPeso() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(27.7);
-        pessoa.setSexo("masculino");
+        pessoa.setSexo("M");
         assertEquals("marginalmente acima do peso", pessoa.calcularImc());
     }
 
@@ -93,34 +97,71 @@ class PessoaTest {
     void deveRetornarHomemAcimaDoPesoIdeal() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(31.09);
-        pessoa.setSexo("masculino");
+        pessoa.setSexo("M");
         assertEquals("acima do peso ideal", pessoa.calcularImc());
     }
+
     @Test
     void deveRetornarHomemObeso() {
         pessoa.setAltura(1.0f);
         pessoa.setPeso(32);
-        pessoa.setSexo("masculino");
+        pessoa.setSexo("M");
         assertEquals("obeso", pessoa.calcularImc());
     }
 
     @Test
-    void devRetornarSexoMasculino(){
+    void devRetornarSexoMasculino() {
         pessoa.setSexo("M");
         assertEquals("M", pessoa.getSexo());
     }
+
     @Test
-    void devRetornarSexoFeminino(){
+    void devRetornarSexoFeminino() {
         pessoa.setSexo("F");
         assertEquals("F", pessoa.getSexo());
     }
-    @Test
-    void deveRetornarSexoInvalido(){
-        try{
-        pessoa.setSexo("A");
 
-        }catch (IllegalArgumentException e){
+    @Test
+    void deveRetornarSexoInvalido() {
+        try {
+            pessoa.setSexo("A");
+            fail(); // proteção
+        } catch (IllegalArgumentException e) {
             assertEquals("Sexo invalido", e.getMessage());
+        }
+    }
+
+    @Test
+    void deveRetornarPesoValido() {
+        pessoa.setPeso(1.0f);
+        assertEquals(1.0f, pessoa.getPeso());
+
+    }
+
+    @Test
+    void deveRetornarPesoInvalido() {
+        try {
+            pessoa.setPeso(0.0f);
+            fail();
+
+        } catch (IllegalArgumentException e) {
+            assertEquals("Peso invalido", e.getMessage());
+        }
+    }
+    @Test
+    void deveRetornarAlturaValido() {
+        pessoa.setAltura(1.0f);
+        assertEquals(1.0f, pessoa.getAltura());
+    }
+
+    @Test
+    void deveRetornarAlturaInvalido() {
+        try {
+            pessoa.setAltura(0.0f);
+            fail();
+
+        } catch (IllegalArgumentException e) {
+            assertEquals("Altura invalida", e.getMessage());
         }
     }
 }

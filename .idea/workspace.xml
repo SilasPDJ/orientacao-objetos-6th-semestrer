@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/studying.md" afterDir="false" />
+    <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="add studying.md + validating logic and tests passing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PessoaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PessoaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studying.md" beforeDir="false" afterPath="$PROJECT_DIR$/studying.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PessoaTest.deveRetornarSexoInvalido">
+  <component name="RunManager" selected="JUnit.PessoaTest">
     <configuration name="PessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests6thSemester" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PessoaTest" />
         <item itemvalue="JUnit.PessoaTest.deveRetornarSexoInvalido" />
         <item itemvalue="JUnit.PessoaTest.deveRetornarMulherAbaixoDoPeso" />
-        <item itemvalue="JUnit.PessoaTest" />
         <item itemvalue="JUnit.PessoaTest.deveRetornarMulherAcimaDoPesoIdeal" />
         <item itemvalue="JUnit.PessoaTest.deveRetornarHomemNoPesoNormal" />
       </list>
@@ -135,6 +135,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add studying.md + validating logic and tests passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add studying.md + validating logic and tests passing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest.ic" NAME="PessoaTest Coverage Results" MODIFIED="1693443647339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

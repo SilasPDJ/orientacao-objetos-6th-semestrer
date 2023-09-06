@@ -24,20 +24,23 @@ public class Pessoa {
     }
 
     public void setAltura(double altura) {
-        if(altura < 0){
-            throw new IllegalArgumentException("Altura inválida, deve ser maior do que 0");
+        if(altura <= 0){
+            throw new IllegalArgumentException("Altura invalida");
         }
         this.altura = altura;
     }
 
     public void setPeso(double peso) {
+        if(peso <= 0){
+            throw new IllegalArgumentException("Peso invalido");
+        }
         this.peso = peso;
     }
     public String calcularImc() {
         double imc = peso / (altura * altura);
         String imcCategory = "";
 
-        if ("feminino".equalsIgnoreCase(sexo)) {
+        if ("F".equalsIgnoreCase(sexo)) {
             if (imc < 19.1) {
                 imcCategory = "abaixo do peso";
             } else if (imc < 25.8) {
@@ -49,7 +52,7 @@ public class Pessoa {
             } else {
                 imcCategory = "obeso";
             }
-        } else if ("masculino".equalsIgnoreCase(sexo)) {
+        } else if ("M".equalsIgnoreCase(sexo)) {
             if (imc < 20.1) {
                 imcCategory = "abaixo do peso";
             } else if (imc < 25.8) {
