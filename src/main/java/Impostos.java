@@ -23,9 +23,9 @@ public class Impostos extends impostosSetters {
 
 
         // Contemplando tanto siglas quanto nomes por extenso
-        if (estado.isEmpty()) {
-            System.out.println("Dica: seguir o seguinte modelo: \"são paulo\".");
-            throw new IllegalArgumentException("estado deve conter string");
+        if (estado.length() != 2) {
+            // System.out.println("Dica: seguir o seguinte modelo: \"SP\".");
+            throw new IllegalArgumentException("estado deve ser preenchido contendo 2 caracteres");
 
         } else if (!estadoExiste(estado)) {
             messageErrorPertencer = "estado deve ser da republica federativa brasileira";

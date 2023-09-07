@@ -8,6 +8,7 @@ public class impostosSetters {
     String[] aliquotas175porcent = {"RO"};
     String[] aliquotas18porcent = {"AM", "AP", "BA", "CE", "DF", "MA", "MG", "PB", "PR", "PE", "PI", "RN", "RS", "RJ", "SP", "SE", "TO"};
     String[] estadosPermitidos =  concatenateArrays(aliquotas17porcent, aliquotas175porcent, aliquotas18porcent);;
+    float[] aliquotasPermitidas = {17, 17.5f, 18};
     String hi;
 
 
