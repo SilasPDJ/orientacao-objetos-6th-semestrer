@@ -21,7 +21,6 @@ public class Impostos extends impostosSetters {
     public void setEstado(String estado) {
         String messageErrorPertencer;
 
-        messageErrorPertencer = "estado deve pertencer ao Brasil";
 
         // Contemplando tanto siglas quanto nomes por extenso
         if (estado.isEmpty()) {
@@ -29,8 +28,7 @@ public class Impostos extends impostosSetters {
             throw new IllegalArgumentException("estado deve conter string");
 
         } else if (!estadoExiste(estado)) {
-            System.out.println("Dica: verifique a presença de espaços desnecessários.");
-
+            messageErrorPertencer = "estado deve ser da republica federativa brasileira";
             throw new IllegalArgumentException(messageErrorPertencer);
         }
 

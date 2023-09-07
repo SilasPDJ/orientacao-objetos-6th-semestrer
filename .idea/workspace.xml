@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="Impostos.java version 1 will be changed">
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="faltam só os testes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Impostos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Impostos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/impostosSetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impostosSetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImpostosTest">
+  <component name="RunManager" selected="JUnit.ImpostosTest.deveRetornarEstadoValido">
     <configuration name="Impostos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Impostos" />
       <module name="calculandoImpostos" />
@@ -71,10 +73,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImpostosTest.TestAleatorio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculandoImpostos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
+      <option name="METHOD_NAME" value="TestAleatorio" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImpostosTest.deveRetornarEstadoInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculandoImpostos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
+      <option name="METHOD_NAME" value="deveRetornarEstadoInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImpostosTest.deveRetornarEstadoValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculandoImpostos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
+      <option name="METHOD_NAME" value="deveRetornarEstadoValido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImpostosTest" />
+        <item itemvalue="JUnit.ImpostosTest.deveRetornarEstadoValido" />
         <item itemvalue="Application.Impostos" />
+        <item itemvalue="JUnit.ImpostosTest" />
+        <item itemvalue="JUnit.ImpostosTest.TestAleatorio" />
+        <item itemvalue="JUnit.ImpostosTest.deveRetornarEstadoInvalidoComBaseNaValidacaoDoSetter" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694054768199</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="faltam só os testes">
+      <created>1694055848890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694055848890</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,17 +168,27 @@
     <MESSAGE value="init" />
     <MESSAGE value="init push" />
     <MESSAGE value="Impostos.java version 1 will be changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impostos.java version 1 will be changed" />
+    <MESSAGE value="faltam só os testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="faltam só os testes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/impostosSetters.java</url>
+          <line>11</line>
+          <properties field="hi" class="impostosSetters" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ImpostosTest.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/Impostos.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/calculandoImpostos$Impostos.ic" NAME="Impostos Coverage Results" MODIFIED="1694056821236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

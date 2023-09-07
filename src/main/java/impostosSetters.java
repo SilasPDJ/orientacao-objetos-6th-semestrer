@@ -1,14 +1,16 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
-import java.util.Arrays;
 
 public class impostosSetters {
     Map<String, Float> aliquotaPorEstado = new HashMap<>();
     String[] aliquotas17porcent = {"AC", "AL", "ES", "GO", "MT", "MS", "PA", "RR", "SC"};
     String[] aliquotas175porcent = {"RO"};
     String[] aliquotas18porcent = {"AM", "AP", "BA", "CE", "DF", "MA", "MG", "PB", "PR", "PE", "PI", "RN", "RS", "RJ", "SP", "SE", "TO"};
-    String[] estados =  concatenateArrays(aliquotas17porcent, aliquotas175porcent, aliquotas18porcent);;
+    String[] estadosPermitidos =  concatenateArrays(aliquotas17porcent, aliquotas175porcent, aliquotas18porcent);;
+    String hi;
+
+
 
     public impostosSetters() {
         // map estados
@@ -34,7 +36,7 @@ public class impostosSetters {
     }
 
     boolean estadoExiste(String estado) {
-        for (String _estado : this.estados) {
+        for (String _estado : this.estadosPermitidos) {
             if (_estado.equals(estado.strip().toUpperCase())) {
                 return true;
             }
