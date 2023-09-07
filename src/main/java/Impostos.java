@@ -28,7 +28,7 @@ public class Impostos extends impostosSetters {
             System.out.println("Dica: seguir o seguinte modelo: \"são paulo\".");
             throw new IllegalArgumentException("estado deve conter string");
 
-        } else if (!estadosMap.containsKey(estado.toUpperCase()) && !estadosReversedMap.containsKey(estado.toUpperCase())) {
+        } else if (!estadoExiste(estado)) {
             System.out.println("Dica: verifique a presença de espaços desnecessários.");
 
             throw new IllegalArgumentException(messageErrorPertencer);
@@ -45,17 +45,10 @@ public class Impostos extends impostosSetters {
 
         return calculo;
     }
+
     private float getAliquota() {
         float aliquota;
-
-        if(estadosMap.containsKey(this.estado)){
-            aliquota = aliquotaPorEstado.get(this.estado);
-        }
-        else if (estadosReversedMap.containsKey(this.estado)){
-            aliquota = aliquotaPorEstado.get(estadosMap.get(this.estado));
-        }else{
-            throw new IllegalArgumentException ("aliquota invalida");
-        }
+        aliquota = aliquotaPorEstado.get(this.estado);
         return aliquota * 0.01f;
     }
 
