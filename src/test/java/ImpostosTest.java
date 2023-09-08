@@ -23,8 +23,9 @@ class ImpostosTest {
         }
 
     }
+
     @Test
-    void deveValidarQueTodosOsEstadosSaoDiferentes(){
+    void deveValidarQueTodosOsEstadosSaoDiferentes() {
 
     }
 
@@ -38,9 +39,10 @@ class ImpostosTest {
                     e.getMessage());
         }
     }
+
     @Test
-    void deveRetornarEstadoDeveSerPreenchidoEconter2Caracteres(){
-    try {
+    void deveRetornarEstadoDeveSerPreenchidoEconter2Caracteres() {
+        try {
             impostosObj.setEstado("");
             fail();
         } catch (IllegalArgumentException e) {
@@ -51,7 +53,7 @@ class ImpostosTest {
     }
 
     @Test
-    void deveRetornarAliquotaValida(){
+    void deveRetornarAliquotaValida() {
         AtomicBoolean estadoAliquotaIsValid = new AtomicBoolean(false);
         for (String estado : impostosObj.estadosPermitidos) {
             estadoAliquotaIsValid.set(false);
@@ -61,8 +63,8 @@ class ImpostosTest {
                 float aliquota = impostosObj.aliquotaPorEstado.get(impostosObj.estado);
                 // aliquota = 16;
                 // Verfica se a alíquota pertence às alíquotas permitidas
-                for(float validAliquota: impostosObj.aliquotasPermitidas){
-                    if (validAliquota == aliquota){
+                for (float validAliquota : impostosObj.aliquotasPermitidas) {
+                    if (validAliquota == aliquota) {
                         estadoAliquotaIsValid.set(true);
                     }
                 }
@@ -72,43 +74,55 @@ class ImpostosTest {
     }
 
     @Test
-    void deveRetornarValorDeveSerMaiorQueZero(){
-        try{
+    void deveRetornarValorDeveSerMaiorQueZero() {
+        try {
             impostosObj.setValor(0);
             fail();
-        }catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             assertEquals("valor deve ser maior do que 0", e.getMessage());
         }
-        try{
+        try {
             impostosObj.setValor(-1);
             fail();
-        }catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             assertEquals("valor deve ser maior do que 0", e.getMessage());
         }
     }
+
     @Test
-    void deveNaoRetornarErroPoisValorEhMaiorQue0(){
+    void deveNaoRetornarErroPoisValorEhMaiorQue0() {
         assertDoesNotThrow(() -> {
             impostosObj.setValor(1);
             System.out.println("Verdadeiro");
         });
     }
 
+    // Testes para saber se os arrays de alíquotas foram mapeados corretamente
+    // objeto <Map> aliquotaPorEstado
     @Test
-    void calcularImpostoDeveRetornarUmValorMenorOuIgualAoAtributoValor(){
-        // Pois não faz sentido a alíquota ser maior do que 100% ...
-        // TODO Alíquotas permitidas já foram valdiadas... Continuar com esse caso?
-        String[] estadosTest = {"SP", "RO", "SC"};
-
-        for(String estado: estadosTest){
+    void aliquotaDeveSer17() {
+        for (String estado : impostosObj.estadosAliquotas17porcent) {
             impostosObj.setEstado(estado);
-            impostosObj.setValor(100);
-
-            double impostoCalculado = impostosObj.calcularImposto();
-            System.out.println(impostoCalculado);
-
-            assertTrue(impostoCalculado <= impostosObj.valor);
+            assertEquals(17.0f, impostosObj.aliquotaPorEstado.get(impostosObj.estado));
         }
+    }
+
+    @Test
+    void aliquotaDeveSer17emeio() {
+        for (String estado : impostosObj.estadosAliquotas175porcent) {
+            impostosObj.setEstado(estado);
+            assertEquals(17.5f, impostosObj.aliquotaPorEstado.get(impostosObj.estado));
+        }
+
+
+    }
+    @Test
+    void aliquotaDeveSer18() {
+        for (String estado : impostosObj.estadosAliquotas18porcent) {
+            impostosObj.setEstado(estado);
+            assertEquals(18.0f, impostosObj.aliquotaPorEstado.get(impostosObj.estado));
+        }
+
 
     }
 

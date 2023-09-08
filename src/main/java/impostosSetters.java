@@ -4,10 +4,10 @@ import java.util.stream.Stream;
 
 public class impostosSetters {
     Map<String, Float> aliquotaPorEstado = new HashMap<>();
-    String[] aliquotas17porcent = {"AC", "AL", "ES", "GO", "MT", "MS", "PA", "RR", "SC"};
-    String[] aliquotas175porcent = {"RO"};
-    String[] aliquotas18porcent = {"AM", "AP", "BA", "CE", "DF", "MA", "MG", "PB", "PR", "PE", "PI", "RN", "RS", "RJ", "SP", "SE", "TO"};
-    String[] estadosPermitidos =  concatenateArrays(aliquotas17porcent, aliquotas175porcent, aliquotas18porcent);;
+    String[] estadosAliquotas17porcent = {"AC", "AL", "ES", "GO", "MT", "MS", "PA", "RR", "SC"};
+    String[] estadosAliquotas175porcent = {"RO"};
+    String[] estadosAliquotas18porcent = {"AM", "AP", "BA", "CE", "DF", "MA", "MG", "PB", "PR", "PE", "PI", "RN", "RS", "RJ", "SP", "SE", "TO"};
+    String[] estadosPermitidos =  concatenateArrays(estadosAliquotas17porcent, estadosAliquotas175porcent, estadosAliquotas18porcent);;
     float[] aliquotasPermitidas = {17, 17.5f, 18};
     String hi;
 
@@ -19,13 +19,13 @@ public class impostosSetters {
         // declare aliquotas dynamic variables
 
         // mapping aliquotas
-        for (String estado : aliquotas17porcent) {
+        for (String estado : estadosAliquotas17porcent) {
             aliquotaPorEstado.put(estado, 17.0f);
         }
-        for (String estado : aliquotas175porcent) {
+        for (String estado : estadosAliquotas175porcent) {
             aliquotaPorEstado.put(estado, 17.5f);
         }
-        for (String estado : aliquotas18porcent) {
+        for (String estado : estadosAliquotas18porcent) {
             aliquotaPorEstado.put(estado, 18.0f);
         }
     }
