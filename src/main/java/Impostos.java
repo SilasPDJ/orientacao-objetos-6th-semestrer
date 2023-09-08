@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Impostos extends impostosSetters {
     String estado;
@@ -39,15 +41,14 @@ public class Impostos extends impostosSetters {
 
     double calcularImposto() {
         double calculo;
-        calculo = this.valor * getAliquota();
+        calculo = this.getValor() * getAliquota();
 
         return calculo;
     }
+    private double getAliquota() {
+        double aliquota = aliquotaPorEstado.get(this.getEstado());
+        double calcAliquota = aliquota / 100;
 
-    private float getAliquota() {
-        float aliquota;
-        aliquota = aliquotaPorEstado.get(this.estado);
-        return aliquota * 0.01f;
+        return calcAliquota;
     }
-
 }

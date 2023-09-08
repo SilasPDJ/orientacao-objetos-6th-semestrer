@@ -1,0 +1,1 @@
+Quando utilizar o getAttribute ou o próprio atributo??

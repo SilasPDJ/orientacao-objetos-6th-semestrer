@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="Adicionando mais casos testes validadores">
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente">
+      <change afterPath="$PROJECT_DIR$/studying.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impostosSetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impostosSetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Impostos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Impostos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,52 +55,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImpostosTest.aliquotaDeveSer17">
-    <configuration name="ImpostosTest.aliquotaDeveSer17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2">
+    <configuration name="ImpostosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="aliquotaDeveSer17" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImpostosTest.deveRetornarCalcularImposto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculandoImpostos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
+      <option name="METHOD_NAME" value="deveRetornarCalcularImposto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImpostosTest.aliquotaDeveSer17emeio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="aliquotaDeveSer17emeio" />
+      <option name="METHOD_NAME" value="deveRetornarCalcularImpostoComValorCorretoDaAliquota17" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImpostosTest.aliquotaDeveSer18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="aliquotaDeveSer18" />
+      <option name="METHOD_NAME" value="deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImpostosTest.calcularImpostoDeveRetornarUmValorMenorOuIgualAoAtributoValor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="calcularImpostoDeveRetornarUmValorMenorOuIgualAoAtributoValor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImpostosTest.deveRetornarAliquotaValida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="calculandoImpostos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="deveRetornarAliquotaValida" />
+      <option name="METHOD_NAME" value="deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImpostosTest.aliquotaDeveSer17" />
-        <item itemvalue="JUnit.ImpostosTest.aliquotaDeveSer18" />
-        <item itemvalue="JUnit.ImpostosTest.aliquotaDeveSer17emeio" />
-        <item itemvalue="JUnit.ImpostosTest.deveRetornarAliquotaValida" />
-        <item itemvalue="JUnit.ImpostosTest.calcularImpostoDeveRetornarUmValorMenorOuIgualAoAtributoValor" />
+        <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" />
+        <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" />
+        <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17" />
+        <item itemvalue="JUnit.ImpostosTest" />
+        <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImposto" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694102516391</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente">
+      <created>1694134925161</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694134925161</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +202,8 @@
     <MESSAGE value="implementacao da classe Impostos e impostosSetters concluida" />
     <MESSAGE value="teste de estado federativo é ou não valido concluido" />
     <MESSAGE value="Adicionando mais casos testes validadores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando mais casos testes validadores" />
+    <MESSAGE value="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
