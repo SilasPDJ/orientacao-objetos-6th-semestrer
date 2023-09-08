@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente">
-      <change afterPath="$PROJECT_DIR$/studying.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Impostos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Impostos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="casos de testes finalizados, tarefa finalizada" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694134925161</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="casos de testes finalizados, tarefa finalizada">
+      <created>1694138328234</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694138328234</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +205,8 @@
     <MESSAGE value="teste de estado federativo é ou não valido concluido" />
     <MESSAGE value="Adicionando mais casos testes validadores" />
     <MESSAGE value="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente" />
+    <MESSAGE value="casos de testes finalizados, tarefa finalizada" />
+    <option name="LAST_COMMIT_MESSAGE" value="casos de testes finalizados, tarefa finalizada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
