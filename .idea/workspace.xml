@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="casos de testes finalizados, tarefa finalizada" />
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="update workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,22 +53,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2">
+  <component name="RunManager" selected="JUnit.ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes">
     <configuration name="ImpostosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImpostosTest.deveRetornarCalcularImposto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="calculandoImpostos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="deveRetornarCalcularImposto" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,13 +93,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calculandoImpostos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
+      <option name="METHOD_NAME" value="deveValidarQueTodosOsEstadosSaoDiferentes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17" />
         <item itemvalue="JUnit.ImpostosTest" />
-        <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImposto" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694138328234</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update workspace.xml">
+      <created>1694138390069</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694138390069</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +216,8 @@
     <MESSAGE value="Adicionando mais casos testes validadores" />
     <MESSAGE value="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente" />
     <MESSAGE value="casos de testes finalizados, tarefa finalizada" />
-    <option name="LAST_COMMIT_MESSAGE" value="casos de testes finalizados, tarefa finalizada" />
+    <MESSAGE value="update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -219,6 +230,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/calculandoImpostos$Impostos.ic" NAME="Impostos Coverage Results" MODIFIED="1694056821236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

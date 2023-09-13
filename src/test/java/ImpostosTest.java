@@ -26,6 +26,16 @@ class ImpostosTest {
 
     @Test
     void deveValidarQueTodosOsEstadosSaoDiferentes() {
+        String estadoAtual;
+        estadoAtual = "SP";
+        int contEstadosIguais = 0;
+        for(String estado: impostosObj.estadosPermitidos){
+            if(estado.equals(estadoAtual)){
+                contEstadosIguais++;
+                estadoAtual = estado;
+            }
+        }
+        assertEquals(1, contEstadosIguais);
 
     }
 
@@ -133,7 +143,6 @@ class ImpostosTest {
         System.out.println("");
 
     }
-
 
     // Testando o resultado dos cálculos da alíquota.
     // Os estados, que devem ser 27 e pertencer ao Brasil...
