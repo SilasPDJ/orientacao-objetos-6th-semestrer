@@ -27,8 +27,11 @@ class ImpostosTest {
     @Test
     void deveValidarQueTodosOsEstadosSaoDiferentes() {
         String estadoAtual;
+        int contEstadosIguais;
+
         estadoAtual = "SP";
-        int contEstadosIguais = 0;
+        contEstadosIguais = 0;
+
         for(String estado: impostosObj.estadosPermitidos){
             if(estado.equals(estadoAtual)){
                 contEstadosIguais++;
