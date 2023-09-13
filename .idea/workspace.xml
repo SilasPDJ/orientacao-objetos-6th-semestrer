@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="update workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +50,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes">
+  <component name="RunManager" selected="JUnit.ImpostosTest">
     <configuration name="ImpostosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImpostosTest" />
         <item itemvalue="JUnit.ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17" />
-        <item itemvalue="JUnit.ImpostosTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694138390069</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="deveValidarQueTodosOsEstadosSaoDiferentes">
+      <created>1694644329271</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694644329271</updated>
+    </task>
+    <task id="LOCAL-00012" summary="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis">
+      <created>1694644406372</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694644406372</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +228,9 @@
     <MESSAGE value="testes praticamente concluídos, falta só validar se o valor da aliquota ta vindo 100% corretamente" />
     <MESSAGE value="casos de testes finalizados, tarefa finalizada" />
     <MESSAGE value="update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
+    <MESSAGE value="deveValidarQueTodosOsEstadosSaoDiferentes" />
+    <MESSAGE value="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
+    <option name="LAST_COMMIT_MESSAGE" value="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
