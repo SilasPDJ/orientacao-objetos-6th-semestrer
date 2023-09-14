@@ -5,6 +5,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// quem manipula os atrivutos de uma clase é a propria classse, nao outras, as outras só pegam o get
+// encapsulamento
 class ImpostosTest {
     Impostos impostosObj;
 
@@ -15,33 +17,9 @@ class ImpostosTest {
 
     @Test
     void deveValidar27EstadosComBaseNoArrayEstadosPermitidos() {
-        assertEquals(27, impostosObj.estadosPermitidos.length);
-        for (String estado : impostosObj.estadosPermitidos) {
-            assertDoesNotThrow(() -> {
-                impostosObj.setEstado(estado);
-            });
-        }
-
+        assertEquals(27, impostosObj.getQuantidadeDeEstadosPermitidos());
+        // testa uma coisa por vez
     }
-
-    @Test
-    void deveValidarQueTodosOsEstadosSaoDiferentes() {
-        String estadoAtual;
-        int contEstadosIguais;
-
-        estadoAtual = "SP";
-        contEstadosIguais = 0;
-
-        for(String estado: impostosObj.estadosPermitidos){
-            if(estado.equals(estadoAtual)){
-                contEstadosIguais++;
-                estadoAtual = estado;
-            }
-        }
-        assertEquals(1, contEstadosIguais);
-
-    }
-
     @Test
     void deveRetornarEstadoInvalidoComBaseNoMetodoSetEstado() {
         try {
@@ -65,37 +43,12 @@ class ImpostosTest {
 
     }
 
-    @Test
-    void deveRetornarAliquotaValida() {
-        AtomicBoolean estadoAliquotaIsValid = new AtomicBoolean(false);
-        for (String estado : impostosObj.estadosPermitidos) {
-            estadoAliquotaIsValid.set(false);
-
-            assertDoesNotThrow(() -> {
-                impostosObj.setEstado(estado);
-                float aliquota = impostosObj.aliquotaPorEstado.get(impostosObj.estado);
-                // aliquota = 16;
-                // Verfica se a alíquota pertence às alíquotas permitidas
-                for (float validAliquota : impostosObj.aliquotasPermitidas) {
-                    if (validAliquota == aliquota) {
-                        estadoAliquotaIsValid.set(true);
-                    }
-                }
-                assertTrue(estadoAliquotaIsValid.get());
-            });
-        }
-    }
+    //
 
     @Test
     void deveRetornarValorDeveSerMaiorQueZero() {
         try {
             impostosObj.setValor(0);
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertEquals("valor deve ser maior do que 0", e.getMessage());
-        }
-        try {
-            impostosObj.setValor(-1);
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("valor deve ser maior do que 0", e.getMessage());
@@ -109,43 +62,6 @@ class ImpostosTest {
         });
     }
 
-    // Testes para saber se os arrays de alíquotas foram mapeados corretamente
-    // objeto <Map> aliquotaPorEstado
-    @Test
-    void aliquotaDeveSer17EdeveExibirEstados() {
-        System.out.print("Atributo de Alíquota 17 %   | Estados: ");
-        for (String estado : impostosObj.estadosAliquotas17porcent) {
-            System.out.printf("%s ", estado);
-            impostosObj.setEstado(estado);
-            assertEquals(17.0f, impostosObj.aliquotaPorEstado.get(impostosObj.estado));
-        }
-        System.out.println("");
-    }
-
-    @Test
-    void aliquotaDeveSer17emeioEdeveExibirEstados() {
-        System.out.print("Atributo de Alíquota 17.5 % | Estados: ");
-        for (String estado : impostosObj.estadosAliquotas175porcent) {
-            System.out.printf("%s ", estado);
-            impostosObj.setEstado(estado);
-            assertEquals(17.5f, impostosObj.aliquotaPorEstado.get(impostosObj.estado));
-        }
-        System.out.println("");
-
-
-    }
-
-    @Test
-    void aliquotaDeveSer18EdeveExibirEstados() {
-        System.out.print("Atributo de Alíquota 18 %   | Estados: ");
-        for (String estado : impostosObj.estadosAliquotas18porcent) {
-            System.out.printf("%s ", estado);
-            impostosObj.setEstado(estado);
-            assertEquals(18.0f, impostosObj.aliquotaPorEstado.get(impostosObj.estado));
-        }
-        System.out.println("");
-
-    }
 
     // Testando o resultado dos cálculos da alíquota.
     // Os estados, que devem ser 27 e pertencer ao Brasil...

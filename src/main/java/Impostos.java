@@ -1,7 +1,4 @@
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
-public class Impostos extends impostosSetters {
+public class Impostos extends ImpostosSetters {
     String estado;
     double valor;
 
@@ -23,7 +20,6 @@ public class Impostos extends impostosSetters {
     public void setEstado(String estado) {
         String messageErrorPertencer;
 
-
         // Contemplando tanto siglas quanto nomes por extenso
         if (estado.length() != 2) {
             // System.out.println("Dica: seguir o seguinte modelo: \"SP\".");
@@ -38,6 +34,9 @@ public class Impostos extends impostosSetters {
         this.estado = estado;
 
     }
+    int getQuantidadeDeEstadosPermitidos(){
+        return getStatesAndAliquotas().size();
+    }
 
     double calcularImposto() {
         double calculo;
@@ -46,9 +45,7 @@ public class Impostos extends impostosSetters {
         return calculo;
     }
     private double getAliquota() {
-        double aliquota = aliquotaPorEstado.get(this.getEstado());
-        double calcAliquota = aliquota / 100;
-
-        return calcAliquota;
+        double aliquota = getAliquotaPorEstado(this.getEstado());
+        return aliquota / 100;
     }
 }

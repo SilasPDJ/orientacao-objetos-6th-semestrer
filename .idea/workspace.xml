@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="remove unnecessary code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Impostos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Impostos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/impostosSetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImpostosSetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImpostosTest">
+  <component name="RunManager" selected="JUnit.ImpostosTest,aliquotaDeveSer17EdeveExibirEstados and 2 more">
     <configuration name="ImpostosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
@@ -60,12 +65,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImpostosTest,aliquotaDeveSer17EdeveExibirEstados and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ImpostosTest" />
-      <option name="METHOD_NAME" value="deveRetornarCalcularImpostoComValorCorretoDaAliquota17" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="ImpostosTest,aliquotaDeveSer17EdeveExibirEstados" />
+        <pattern testClass="ImpostosTest,aliquotaDeveSer17emeioEdeveExibirEstados" />
+        <pattern testClass="ImpostosTest,aliquotaDeveSer18EdeveExibirEstados" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImpostosTest,aliquotaDeveSer17EdeveExibirEstados and 2 more" />
         <item itemvalue="JUnit.ImpostosTest" />
         <item itemvalue="JUnit.ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" />
-        <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694644406372</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="remove unnecessary code">
+      <created>1694644809175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694644809175</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,16 +244,16 @@
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="deveValidarQueTodosOsEstadosSaoDiferentes" />
     <MESSAGE value="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
-    <option name="LAST_COMMIT_MESSAGE" value="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
+    <MESSAGE value="remove unnecessary code" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/impostosSetters.java</url>
-          <line>11</line>
-          <properties field="hi" class="impostosSetters" />
-          <option name="timeStamp" value="14" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImpostosSetters.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
