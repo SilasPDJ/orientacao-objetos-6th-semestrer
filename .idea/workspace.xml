@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="remove unnecessary code">
+    <list default="true" id="688014c7-1a96-4b49-970b-927736cdf2e2" name="Changes" comment="remove unnecessary code + fix setters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Impostos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Impostos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impostosSetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImpostosSetters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImpostosTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImpostosTest,aliquotaDeveSer17EdeveExibirEstados and 2 more">
+  <component name="RunManager" selected="JUnit.ImpostosTest">
     <configuration name="ImpostosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="calculandoImpostos" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImpostosTest,aliquotaDeveSer17EdeveExibirEstados and 2 more" />
         <item itemvalue="JUnit.ImpostosTest" />
+        <item itemvalue="JUnit.ImpostosTest,aliquotaDeveSer17EdeveExibirEstados and 2 more" />
         <item itemvalue="JUnit.ImpostosTest.deveValidarQueTodosOsEstadosSaoDiferentes" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17Teste2" />
         <item itemvalue="JUnit.ImpostosTest.deveRetornarCalcularImpostoComValorCorretoDaAliquota17eMeio" />
@@ -217,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694644809175</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="remove unnecessary code + fix setters">
+      <created>1694727706040</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694727706040</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +249,8 @@
     <MESSAGE value="deveValidarQueTodosOsEstadosSaoDiferentes" />
     <MESSAGE value="deveValidarQueTodosOsEstadosSaoDiferentes declaracao variaveis" />
     <MESSAGE value="remove unnecessary code" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary code" />
+    <MESSAGE value="remove unnecessary code + fix setters" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary code + fix setters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -263,6 +268,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/calculandoImpostos$ImpostosTest.ic" NAME="ImpostosTest Coverage Results" MODIFIED="1694728466500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/calculandoImpostos$Impostos.ic" NAME="Impostos Coverage Results" MODIFIED="1694056821236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

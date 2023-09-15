@@ -39,12 +39,21 @@ class ImpostosTest {
         } catch (IllegalArgumentException e) {
             assertEquals("estado deve ser preenchido contendo 2 caracteres",
                     e.getMessage());
+
+        }
+    }
+
+    @Test
+    void deve(){
+        try {
+            impostosObj.setEstado("NY");
+            fail();
+        } catch (IllegalArgumentException e) {
+            assertEquals("estado deve ser da republica federativa brasileira",
+                    e.getMessage());
         }
 
     }
-
-    //
-
     @Test
     void deveRetornarValorDeveSerMaiorQueZero() {
         try {
