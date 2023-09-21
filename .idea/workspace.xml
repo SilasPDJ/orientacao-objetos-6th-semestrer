@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="add studying.md + validating logic and tests passing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContaBancariaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PessoaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PessoaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studying.md" beforeDir="false" afterPath="$PROJECT_DIR$/studying.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnyClassTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PessoaTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,51 +63,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PessoaTest">
-    <configuration name="PessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ContaBancariaTest">
+    <configuration name="ContaBancariaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests6thSemester" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PessoaTest" />
+      <option name="MAIN_CLASS_NAME" value="ContaBancariaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PessoaTest.deveRetornarHomemNoPesoNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveRetornarOperacoesSaqueDepositoRealizadasComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests6thSemester" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PessoaTest" />
-      <option name="METHOD_NAME" value="deveRetornarHomemNoPesoNormal" />
+      <option name="MAIN_CLASS_NAME" value="ContaBancariaTest" />
+      <option name="METHOD_NAME" value="deveRetornarOperacoesSaqueDepositoRealizadasComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PessoaTest.deveRetornarMulherAbaixoDoPeso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveRetornarSaldoIndisponivel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests6thSemester" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PessoaTest" />
-      <option name="METHOD_NAME" value="deveRetornarMulherAbaixoDoPeso" />
+      <option name="MAIN_CLASS_NAME" value="ContaBancariaTest" />
+      <option name="METHOD_NAME" value="deveRetornarSaldoIndisponivel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PessoaTest.deveRetornarMulherAcimaDoPesoIdeal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveRetornarTitularDeveConterNoMaximo55caCaracteres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests6thSemester" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PessoaTest" />
-      <option name="METHOD_NAME" value="deveRetornarMulherAcimaDoPesoIdeal" />
+      <option name="MAIN_CLASS_NAME" value="ContaBancariaTest" />
+      <option name="METHOD_NAME" value="deveRetornarTitularDeveConterNoMaximo55caCaracteres" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PessoaTest.deveRetornarSexoInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaTest.deveRetornarValorDeveSerNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTests6thSemester" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PessoaTest" />
-      <option name="METHOD_NAME" value="deveRetornarSexoInvalido" />
+      <option name="MAIN_CLASS_NAME" value="ContaBancariaTest" />
+      <option name="METHOD_NAME" value="deveRetornarValorDeveSerNegativo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PessoaTest" />
-        <item itemvalue="JUnit.PessoaTest.deveRetornarSexoInvalido" />
-        <item itemvalue="JUnit.PessoaTest.deveRetornarMulherAbaixoDoPeso" />
-        <item itemvalue="JUnit.PessoaTest.deveRetornarMulherAcimaDoPesoIdeal" />
-        <item itemvalue="JUnit.PessoaTest.deveRetornarHomemNoPesoNormal" />
+        <item itemvalue="JUnit.ContaBancariaTest" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveRetornarOperacoesSaqueDepositoRealizadasComSucesso" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveRetornarValorDeveSerNegativo" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveRetornarSaldoIndisponivel" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveRetornarTitularDeveConterNoMaximo55caCaracteres" />
       </list>
     </recent_temporary>
   </component>
@@ -123,6 +132,14 @@
       <option name="presentableId" value="Default" />
       <updated>1693437606514</updated>
     </task>
+    <task id="LOCAL-00001" summary="add studying.md + validating logic and tests passing">
+      <created>1694042028939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694042028939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,5 +160,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest.ic" NAME="PessoaTest Coverage Results" MODIFIED="1693443647339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest_deveRetornarSexoInvalido.ic" NAME="PessoaTest.deveRetornarSexoInvalido Coverage Results" MODIFIED="1694040630261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/helloMeavenProject$ContaBancariaTest.ic" NAME="ContaBancariaTest Coverage Results" MODIFIED="1695257680680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
