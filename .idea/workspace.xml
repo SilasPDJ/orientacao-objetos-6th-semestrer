@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="ContaBancaria testes finalizados + classes implementadas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ContaBancaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContaBancariaTest.java" afterDir="false" />
+    <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="linha nao contemplada no caso de teste">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AnyClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AnyClassTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PessoaTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695258485648</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="linha nao contemplada no caso de teste">
+      <created>1695258789966</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695258789966</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,11 +163,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add studying.md + validating logic and tests passing" />
     <MESSAGE value="ContaBancaria testes finalizados + classes implementadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="ContaBancaria testes finalizados + classes implementadas" />
+    <MESSAGE value="linha nao contemplada no caso de teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="linha nao contemplada no caso de teste" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest.ic" NAME="PessoaTest Coverage Results" MODIFIED="1693443647339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest_deveRetornarSexoInvalido.ic" NAME="PessoaTest.deveRetornarSexoInvalido Coverage Results" MODIFIED="1694040630261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/helloMeavenProject$ContaBancariaTest.ic" NAME="ContaBancariaTest Coverage Results" MODIFIED="1695258261189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/helloMeavenProject$ContaBancariaTest.ic" NAME="ContaBancariaTest Coverage Results" MODIFIED="1695258543158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

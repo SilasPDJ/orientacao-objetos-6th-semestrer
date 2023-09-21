@@ -31,7 +31,7 @@ public class ContaBancaria {
 
         } else {
             saldo += valor;
-            System.out.println("Depósito de $" + valor + " realizado com sucesso.");
+//            System.out.println("Depósito de $" + valor + " realizado com sucesso.");
         }
     }
 
@@ -41,7 +41,7 @@ public class ContaBancaria {
         } else if (valor + this.saldo < 0) {
             throw new IllegalArgumentException("saldo indisponivel");
         }
-        System.out.printf("Saque de $%.2f realizado com sucesso!\n", valor);
+//        System.out.printf("Saque de $%.2f realizado com sucesso!\n", valor);
         setSaldo(valor);
     }
 
