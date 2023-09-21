@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="add studying.md + validating logic and tests passing">
+    <list default="true" id="70c03ba1-4711-443b-a00d-1321a47fad85" name="Changes" comment="ContaBancaria testes finalizados + classes implementadas">
       <change afterPath="$PROJECT_DIR$/src/main/java/ContaBancaria.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/ContaBancariaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -139,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694042028939</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ContaBancaria testes finalizados + classes implementadas">
+      <created>1695258485648</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695258485648</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,11 +162,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add studying.md + validating logic and tests passing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add studying.md + validating logic and tests passing" />
+    <MESSAGE value="ContaBancaria testes finalizados + classes implementadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="ContaBancaria testes finalizados + classes implementadas" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest.ic" NAME="PessoaTest Coverage Results" MODIFIED="1693443647339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/helloMeavenProject$PessoaTest_deveRetornarSexoInvalido.ic" NAME="PessoaTest.deveRetornarSexoInvalido Coverage Results" MODIFIED="1694040630261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/helloMeavenProject$ContaBancariaTest.ic" NAME="ContaBancariaTest Coverage Results" MODIFIED="1695257680680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/helloMeavenProject$ContaBancariaTest.ic" NAME="ContaBancariaTest Coverage Results" MODIFIED="1695258261189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

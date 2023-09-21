@@ -72,7 +72,7 @@ public class ContaBancaria {
         } else if (saldo >= 20000) {
             categoria = "jade";
         } else {
-            categoria = "não possui";
+            categoria = "não possui"; // apenas por segurança adicional.
         }
         return categoria;
     }
